@@ -1,0 +1,26 @@
+
+<html>
+  <head>
+    <title>MicroBloggos</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="javascripts/MicroApp.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  <body ng-app="MicroApp">
+    <div id='main' class="container">
+      <nav class="navbar-fluid navbar-default navbar-fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"> Meaow! </a>
+          <p class="navbar-text"> MicroBloggos, the new big thing.</p>
+          <p class="navbar-right navbar-text"><a href="#/login">Login</a> | <a href="#/register">Not registered yet ? Sign up !</a></p>
+        </div>
+      </nav>
+      <div class="col-md-offset-2 col-md-8">
+        <div ng-view>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
